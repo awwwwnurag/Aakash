@@ -36,9 +36,9 @@ navigator.geolocation.getCurrentPosition(async function (position) {
         cityMain.innerHTML = data.city.name;
         cityTemp.innerHTML = Math.floor(data.list[0].main.temp) + "°";
 
-        // Change text description for broken clouds to light rain
+        // Change text description for rain to light rain
         let weatherDescription = data.list[0].weather[0].description;
-        if (data.list[0].weather[0].main.toLowerCase() === "broken clouds") {
+        if (data.list[0].weather[0].main.toLowerCase() === "rain") {
             weatherDescription = "light rain";
         }
         weatherMain[0].innerHTML = weatherDescription;
@@ -62,7 +62,7 @@ navigator.geolocation.getCurrentPosition(async function (position) {
 
         let weatherCondition = data.list[0].weather[0].main.toLowerCase();
 
-        if (weatherCondition === "rain" || weatherCondition === "broken clouds") {
+        if (weatherCondition === "rain" || weatherCondition === "rain") {
             weatherImg.src = "img/rain.png";
             weatherImgs.src = "img/rain.png";
         } else if (weatherCondition === "clear" || weatherCondition === "clear sky") {
@@ -110,7 +110,7 @@ navigator.geolocation.getCurrentPosition(async function (position) {
 
                 if (!dailyForecasts[date]) {
                     let description = item.weather[0].description;
-                    if (item.weather[0].main.toLowerCase() === "broken clouds") {
+                    if (item.weather[0].main.toLowerCase() === "rain") {
                         description = "light rain";
                     }
                     dailyForecasts[date] = {
@@ -127,7 +127,7 @@ navigator.geolocation.getCurrentPosition(async function (position) {
 
                 switch (dailyForecasts[date].weatherImg) {
                     case "rain":
-                    case "broken clouds":
+                    case "rain":
                         imgSrc = "img/rain.png";
                         break;
                     case "clear":

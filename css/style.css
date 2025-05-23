@@ -313,12 +313,31 @@ nav ul li a {
     height: 120px;
   }
 }
+/* Cool Toggle Button Styling */
 #dark-mode-toggle {
-  margin-left: 20px;
-  padding: 5px 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
   cursor: pointer;
+  color: var(--font-color-main); /* Default icon color */
+  margin-left: 10px;
+  transition: color 0.3s ease;
 }
 
+#dark-mode-toggle .fa-moon {
+  display: none; /* Hide moon icon by default */
+}
+
+.dark-mode #dark-mode-toggle .fa-sun {
+  display: none; /* Hide sun icon in dark mode */
+}
+
+.dark-mode #dark-mode-toggle .fa-moon {
+  display: inline-block; /* Show moon icon in dark mode */
+  color: #ffffff; /* White color for moon icon in dark mode */
+}
+
+/* Dark mode styles */
 .dark-mode {
   background-color: #1e1e1e;
   color: #ffffff;
@@ -328,11 +347,14 @@ nav ul li a {
   background-color: #2d2d2d;
 }
 
+/* Remove the rule that changes Sky Buddy h1 color in dark mode */
+/*
 .dark-mode .website-title h1 {
   background: linear-gradient(45deg, #abcdef, #fedcba);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+*/
 
 .dark-mode .city-name h1,
 .dark-mode .weather-main,

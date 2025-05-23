@@ -37,9 +37,6 @@ body {
   z-index: 1000;
   background-color: rgba(224, 238, 250, 0.9);
   backdrop-filter: blur(5px);
-  position: relative;
-  justify-content: space-between;
-  padding: 0 20px;
 }
 
 .website-title i {
@@ -58,8 +55,6 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  flex-grow: 1;
-  text-align: center;
 }
 
 @keyframes float {
@@ -353,6 +348,15 @@ nav ul li a {
   background-color: #2d2d2d;
 }
 
+/* Remove the rule that changes Sky Buddy h1 color in dark mode */
+/*
+.dark-mode .website-title h1 {
+  background: linear-gradient(45deg, #abcdef, #fedcba);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+*/
+
 .dark-mode .city-name h1,
 .dark-mode .weather-main,
 .dark-mode .show-metric,
@@ -361,16 +365,8 @@ nav ul li a {
 .dark-mode .weather-main-today,
 .dark-mode .day-weather,
 .dark-mode .temp-weather,
-.dark-mode .weather-main-forecast,
-.dark-mode .website-title i,
-.dark-mode .website-title h1 {
+.dark-mode .weather-main-forecast {
   color: #ffffff;
-}
-
-.dark-mode .website-title h1 {
-  background: linear-gradient(45deg, #ffffff, #cccccc);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .dark-mode .desc-box,
@@ -381,22 +377,5 @@ nav ul li a {
 }
 
 .dark-mode .desc-box i {
-  color: #ffffff;
-}
-
-.dark-mode .website-title {
-  background-color: rgba(45, 45, 45, 0.9);
-}
-
-.dark-mode .day-weather,
-.dark-mode .temp-weather,
-.dark-mode .weather-main-forecast,
-.dark-mode .website-title i,
-.dark-mode .website-title h1 {
-  color: #ffffff;
-}
-
-.dark-mode .today-forecast h4,
-.dark-mode .future-forecast h5 {
   color: #ffffff;
 }

@@ -99,7 +99,13 @@ async function city(cityName) {
     return "";
   }
 }
+// Dark mode toggle functionality
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+const body = document.body;
 
+darkModeToggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+});
 // add section
 let section = document.querySelector(".add-section");
 let navBtn = document.querySelector(".button");

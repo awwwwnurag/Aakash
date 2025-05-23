@@ -1,3 +1,15 @@
+// Dark mode toggle functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const body = document.body;
+
+    if (darkModeToggle) {
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+        });
+    }
+});
+
 let apiKey = "1e3e8f230b6064d27976e41163a82b77";
 let searchinput = document.querySelector(".searchinput");
 let box = document.querySelector(".box");
@@ -99,13 +111,7 @@ async function city(cityName) {
     return "";
   }
 }
-// Dark mode toggle functionality
-const darkModeToggle = document.getElementById('dark-mode-toggle');
-const body = document.body;
 
-darkModeToggle.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-});
 // add section
 let section = document.querySelector(".add-section");
 let navBtn = document.querySelector(".button");

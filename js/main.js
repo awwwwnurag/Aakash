@@ -181,3 +181,9 @@ navigator.geolocation.getCurrentPosition(async function (position) {
     // Handle location retrieval error
     alert("Please turn on your location and refresh the page");
   });
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+const body = document.body;
+
+darkModeToggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+});

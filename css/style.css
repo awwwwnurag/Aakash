@@ -348,15 +348,6 @@ nav ul li a {
   background-color: #2d2d2d;
 }
 
-/* Remove the rule that changes Sky Buddy h1 color in dark mode */
-/*
-.dark-mode .website-title h1 {
-  background: linear-gradient(45deg, #abcdef, #fedcba);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-*/
-
 .dark-mode .city-name h1,
 .dark-mode .weather-main,
 .dark-mode .show-metric,
@@ -390,4 +381,17 @@ nav ul li a {
 
 .dark-mode .website-title {
   background-color: rgba(45, 45, 45, 0.9);
+}
+
+.dark-mode .day-weather,
+.dark-mode .temp-weather,
+.dark-mode .weather-main-forecast,
+.dark-mode .website-title i,
+.dark-mode .website-title h1 {
+  color: #ffffff;
+}
+
+.dark-mode .today-forecast h4,
+.dark-mode .future-forecast h5 {
+  color: #ffffff;
 }

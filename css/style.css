@@ -313,6 +313,7 @@ nav ul li a {
     height: 120px;
   }
 }
+
 /* Cool Toggle Button Styling */
 #dark-mode-toggle {
   background: none;
@@ -364,8 +365,16 @@ nav ul li a {
 .dark-mode .weather-main-today,
 .dark-mode .day-weather,
 .dark-mode .temp-weather,
-.dark-mode .weather-main-forecast {
+.dark-mode .weather-main-forecast,
+.dark-mode .website-title i,
+.dark-mode .website-title h1 {
   color: #ffffff;
+}
+
+.dark-mode .website-title h1 {
+  background: linear-gradient(45deg, #ffffff, #cccccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .dark-mode .desc-box,
@@ -377,4 +386,8 @@ nav ul li a {
 
 .dark-mode .desc-box i {
   color: #ffffff;
+}
+
+.dark-mode .website-title {
+  background-color: rgba(45, 45, 45, 0.9);
 }

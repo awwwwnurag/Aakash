@@ -29,7 +29,7 @@ navigator.geolocation.getCurrentPosition(async function (position) {
         // Get new elements for detailed weather info
         let windElement = document.getElementById("wind");
         let pressureElement = document.getElementById("pressure");
-        let humidityElement = document.getElementById("humidity"); // This now targets the new element
+        let humidityElement = document.getElementById("detailed-humidity"); // This now targets the new element
         let sunriseElement = document.getElementById("sunrise");
         let sunsetElement = document.getElementById("sunset");
 

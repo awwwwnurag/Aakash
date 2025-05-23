@@ -326,10 +326,7 @@ nav ul li a {
   font-size: 1.5rem;
   cursor: pointer;
   color: var(--font-color-main); /* Default icon color */
-  position: absolute;
-  left: 20px; /* Adjust distance from the left edge */
-  top: 50%; /* Vertically center */
-  transform: translateY(-50%); /* Adjust for vertical centering */
+  margin-left: 10px;
   transition: color 0.3s ease;
 }
 

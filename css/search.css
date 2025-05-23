@@ -259,3 +259,78 @@ h3 {
     height: 120px;
   } 
 }
+/* Dark mode styles */
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.dark-mode #screen {
+  background-color: #2d2d2d;
+}
+
+.dark-mode h3,
+.dark-mode .message p,
+.dark-mode .error-message p {
+  color: #ffffff;
+}
+
+.dark-mode .search {
+  background-color: #3a3a3a;
+  box-shadow: 1px 2px 2px #555555;
+}
+
+.dark-mode .search-icon i,
+.dark-mode .search input,
+.dark-mode .search input::placeholder {
+  color: #ffffff;
+}
+
+.dark-mode .weather-box,
+.dark-mode .desc-box {
+  background-color: #3a3a3a;
+  border-color: #555555;
+}
+
+.dark-mode .desc-box i {
+  color: #ffffff;
+}
+
+/* Dark mode toggle button styles */
+#dark-mode-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--font-color-main);
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+#dark-mode-toggle .fa-moon {
+  display: none;
+}
+
+.dark-mode #dark-mode-toggle .fa-sun {
+  display: none;
+}
+
+.dark-mode #dark-mode-toggle .fa-moon {
+  display: inline-block;
+  color: #ffffff;
+}
+
+.dark-mode .website-title {
+  background-color: rgba(45, 45, 45, 0.9);
+}
+
+.dark-mode .website-title i,
+.dark-mode .website-title h1 {
+  color: #ffffff;
+}
+
+.dark-mode .website-title h1 {
+  background: linear-gradient(45deg, #ffffff, #cccccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
